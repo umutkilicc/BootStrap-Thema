@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-background-color:rgb(248, 249, 250);
+    --button-background-color:#0d6efd;
+    --button-hover-color: #0b5ed7;
+    --border-radius: 0.5rem;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../font/Metropolis-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../font/Metropolis-Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav {
+    background-color: black;
+    font-family: "Metropolis";
+    
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 18px;
+    
+}
+
+.header-content a {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav div ul li a {
+    text-decoration: none;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+nav div ul li {
+    display: flex;
+}
+
+.inline li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.active a{
+    color: rgba(255, 255, 255, 1)
+}
+.passive a{
+    color: rgba(255,255,255,0.5);
+}
+.passive a:hover {
+    color: rgba(255,255,255,0.75);
+}
+
+.card-size {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    font-family: "Metropolis";
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: var(--border-radius);
+    flex-direction: column;
+}
+.card h1 {
+    padding: 2rem;
+    font-size: 32px;
+}
+.card p {
+    padding: 2rem;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.card a {
+    color: white;
+    margin: 1rem;
+    background-color: var(--button-background-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: var(--button-hover-color);
+}
+
+.box-size {
+    max-width: 1200px;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Metropolis";
+    margin: auto;
+}
+
+.box {
+    width: 30%;
+    min-width: 300px;
+    background-color: var(--card-background-color);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box h1 {
+    margin-top: 0.8rem;
+}
+
+.box p {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.icon-box {
+    margin-top: -2rem;
+    background-color: var(--button-background-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: black;
+    font-family: "Metropolis";
+}
+
+footer p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
